@@ -1,38 +1,120 @@
-.App {
+.app_main_div {
+  display: flex;
+  height: 80vh;
+  width: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 10px solid rgb(83, 87, 85);
+  background-color: rgb(196, 196, 196);
+}
+
+/* Heading */
+h1 {
+  color: rgb(71, 90, 107);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+/* Break css */
+
+.break_container {
+  display: flex;
+  margin: 20px;
+  padding: 12px 12px;
+  background-color: rgb(105, 105, 105);
+  border-radius: 50px;
+  flex-direction: column; 
+}
+
+
+.break_heading{
+  text-align: center;
+  align-self: center;
+  justify-items: center;
+  
+}
+
+.break_timer{
+  display: flex;
+}
+
+/* Session css */
+
+.session_container {
+  display: flex;
+  margin: 20px;
+  padding: 12px 12px;
+  background-color: rgb(105, 105, 105);
+  border-radius: 50px;
+  flex-direction: column;
+}
+
+.session_heading{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.session_timer{
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Timer css */
+
+.timer_main_div {
+  display: flex;
+  margin-top: 12px;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid rgb(83, 87, 85);
+  border-radius: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.interval_container {
+  display: flex;
+}
+
+button {
+  padding: 5px;
+  margin: 12px;
+}
+
+.timer {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 100;
+}
+/* button css */
+button {
+  height: 34px;
+  width: 50px;
+  font-size: 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(65, 62, 59);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.heading{
+  color: aliceblue;
 }
